@@ -267,8 +267,6 @@ GEM
       byebug (~> 10.0)
       pry (~> 0.10)
     public_suffix (3.0.3)
-    puma (3.12.0)
-    puma (3.12.0-java)
     pundit (2.0.0)
       activesupport (>= 3.0.0)
     rack (2.0.5)
@@ -421,7 +419,6 @@ DEPENDENCIES
   parallel_tests
   pry
   pry-byebug
-  puma (~> 3.12)
   pundit
   rack-mini-profiler (>= 0.10.1)
   rails (~> 5.2.x)
