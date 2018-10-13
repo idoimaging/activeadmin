@@ -1,5 +1,5 @@
 RSpec.describe "Changelog" do
-  subject(:changelog) do
+  let(:changelog) do
     path = File.join(File.dirname(__dir__), "CHANGELOG.md")
     File.read(path)
   end
@@ -14,7 +14,7 @@ RSpec.describe "Changelog" do
   describe 'entry' do
     let(:lines) { changelog.each_line }
 
-    subject(:entries) { lines.grep(/^\*/) }
+    let(:entries) { lines.grep(/^\*/) }
 
     it 'does not end with a punctuation' do
       entries.each do |entry|
