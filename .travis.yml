@@ -9,6 +9,7 @@ branches:
   only:
     - master
     - 1-4-stable
+    - backport_capybara_upgrade
 
 language: ruby
 
