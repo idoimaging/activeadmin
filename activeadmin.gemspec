@@ -26,7 +26,9 @@ Gem::Specification.new do |s|
   s.add_dependency 'kaminari', '>= 1.0.1'
   s.add_dependency 'railties', '>= 4.2', '< 5.3'
   s.add_dependency 'ransack', '>= 1.8.7'
-  s.add_dependency 'sass', '~> 3.4'
+  # ahc compass requires sass >= 3.5.  sass-ruby is deprecated.
+  #  s.add_dependency 'sass', '~> 3.4'
+  s.add_dependency 'sassc'
   s.add_dependency 'sprockets', '>= 3.0', '< 4.1'
   s.add_dependency 'sprockets-es6', '>= 0.9.2'
 end
